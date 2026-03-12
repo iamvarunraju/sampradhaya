@@ -6,7 +6,7 @@
     <title>SAMPRADHAYA | The Divine Atlas</title>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Manrope:wght@200;400;600&family=Noto+Serif+Devanagari:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Manrope:wght@200;300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
@@ -14,42 +14,33 @@
 <body>
 
     <div id="preloader">
-        <div class="loader-visual">
-            <div class="mandala-svg">
-                <svg viewBox="0 0 100 100">
-                    <circle cx="50" cy="50" r="45" fill="none" stroke="rgba(212,175,55,0.2)" stroke-width="0.5"/>
-                    <path d="M50 5 L55 40 L95 50 L55 60 L50 95 L45 60 L5 50 L45 40 Z" fill="none" stroke="#d4af37" stroke-width="0.5">
-                        <animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="10s" repeatCount="indefinite" />
-                    </path>
-                </svg>
-            </div>
-            <h1 class="loader-logo">सम्प्रदाय</h1>
+        <div class="loader-content">
+            <h1 class="loader-logo">SAMPRADHAYA सम्प्रदाय</h1>
             <div class="loader-track"><div class="loader-bar"></div></div>
-            <p class="loader-status">Awakening Ancient Echoes...</p>
+            <p class="loader-status">Awakening the Archives...</p>
         </div>
     </div>
 
     <div class="noise-overlay"></div>
     <div class="cursor-dot"></div>
-    <div class="cursor-outline"></div>
+    <div class="cursor-ring"></div>
 
-    <nav>
-        <div class="logo">SAMPRADHAYA <span class="hindi-sub">सम्प्रदाय</span></div>
-    </nav>
+    <nav><div class="logo">SAMPRADHAYA सम्प्रदाय</div></nav>
 
     <main id="hero-view">
-        <div class="hero-layers">
-            <div class="layer layer-bg"></div>
-            <div class="layer layer-middle"></div>
-        </div>
+        <div class="hero-bg"></div>
+        <div class="hero-vignette"></div>
+        
+        <div class="mandala-bg"></div>
+        
         <div class="hero-content">
             <div class="hero-text">
-                <div class="label"><span>॥</span> DIGITAL HERITAGE ARCHIVE <span>॥</span></div>
-                <h1>The Soul of <br> <span class="italic">Ancient Bhārat</span></h1>
-                <p>A cinematic pilgrimage through the architectural marvels where the mortal meets the divine.</p>
-                <button id="explore-btn" class="divine-btn">
-                    <span class="btn-text">Initiate Pilgrimage</span>
-                    <div class="btn-circle"></div>
+                <div class="label">EST. 2026 • DIGITAL HERITAGE</div>
+                <h1>The Architecture <br> <span class="gold-italic">of the Divine</span></h1>
+                <p>An immersive digital atlas mapping the soul of India's living traditions and ancient marvels.</p>
+                <button id="explore-btn" class="magnetic-btn">
+                    <span class="btn-text">Enter The Atlas</span>
+                    <i class="fa-solid fa-arrow-right-long"></i>
                 </button>
             </div>
         </div>
@@ -57,44 +48,43 @@
 
     <section id="map-view">
         <div id="map-container"></div>
-        <div class="map-overlay-vignette"></div>
         <div class="map-hud">
             <button id="return-btn" class="hud-btn">
-                <i class="fa-solid fa-arrow-left"></i> <span>MORTAL REALM</span>
+                <i class="fa-solid fa-arrow-left"></i> Return
             </button>
         </div>
     </section>
 
     <aside id="drawer">
-        <div class="drawer-header-visual">
-            <img src="" id="d-img">
-            <div class="drawer-close" onclick="window.history.back()">×</div>
+        <div class="drawer-visual">
+            <img src="" id="d-img" alt="Heritage Site">
+            <div class="visual-overlay"></div>
         </div>
         <div class="drawer-content">
-            <div class="site-title-area">
-                <span class="meta-tag" id="d-meta">Era • Dynasty</span>
+            <div class="drawer-header">
+                <span class="meta-tag" id="d-meta">Era • Builder</span>
                 <h2 id="d-name">Name</h2>
             </div>
             
-            <div class="divider-floral">⚜</div>
-            
-            <div class="scroll-area">
-                <div class="legend-box">
-                    <h3>The Sacred Legend</h3>
-                    <p id="d-desc">Description...</p>
+            <div class="drawer-body">
+                <div class="divider">
+                    <span class="divider-icon">✺</span>
                 </div>
                 
-                <div class="spec-grid">
-                    <div class="spec-item">
-                        <label>Architecture</label>
-                        <span id="d-style">--</span>
-                    </div>
-                    <div class="spec-item">
-                        <label>Veneration Hours</label>
+                <h3>The Sacred Legend</h3>
+                <p id="d-desc">Description text...</p>
+                
+                <div class="info-grid">
+                    <div class="info-item">
+                        <label><i class="fa-regular fa-clock"></i> Timings</label>
                         <span id="d-timings">--</span>
                     </div>
-                    <div class="spec-item full">
-                        <label>Great Festivals</label>
+                    <div class="info-item">
+                        <label><i class="fa-solid fa-gopuram"></i> Architecture</label>
+                        <span id="d-style">--</span>
+                    </div>
+                    <div class="info-item full-width">
+                        <label><i class="fa-solid fa-calendar-day"></i> Key Festivals</label>
                         <span id="d-festivals">--</span>
                     </div>
                 </div>
