@@ -26,14 +26,14 @@ class App {
                 id: 3, name: "Konark Sun Temple", location: { lat: 19.8876, lng: 86.0945 },
                 meta: "1250 CE • Eastern Ganga",
                 desc: "Designed as a colossal chariot for the Sun God Surya, with 24 giant stone wheels.",
-                image: "https://images.unsplash.com/photo-1628134785730-22687f872e9a?w=800",
+                image: "https://imgs.search.brave.com/gmHJPiwJ2mVCUj4_s6CRUS4spQKi9kHIDzIQDjypc18/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMjAz/NjM0MjAxOC9waG90/by90aGUta29uYXJr/LXN1bi10ZW1wbGUt/aXMtYmVpbmctc2Vl/bi1pbi1rb25hcmst/b2Rpc2hhLW9uLWZl/YnJ1YXJ5LTI0LTIw/MjQtdGhpcy0xM3Ro/LWNlbnR1cnktY2Uu/anBnP3M9NjEyeDYx/MiZ3PTAmaz0yMCZj/PUxpcFFQZmp6VDNR/WDluMkg1V3FhNzdw/SmpGVWVvZXd4aDZB/dFJ2eF9CZTA9",
                 details: { timings: "6:00 AM - 8:00 PM", style: "Kalinga Architecture", festivals: "Magha Saptami" }
             },
             {
                 id: 4, name: "Golden Temple", location: { lat: 31.6200, lng: 74.8765 },
                 meta: "1577 CE • Sikh Empire",
                 desc: "The holiest Gurdwara of Sikhism, representing human brotherhood and equality.",
-                image: "https://images.unsplash.com/photo-1588096344356-9b630386566d?w=800",
+                image: "https://imgs.search.brave.com/CthxPdaLYz1HQDSVVU-o3se1yIt7D5E-ocR2MI-oPGc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy90/aHVtYi85Lzk0L1Ro/ZV9Hb2xkZW5fVGVt/cGxlX29mX0Ftcml0/aHNhcl83LmpwZy81/MTJweC1UaGVfR29s/ZGVuX1RlbXBsZV9v/Zl9BbXJpdGhzYXJf/Ny5qcGc",
                 details: { timings: "Open 24 Hours", style: "Sikh Architecture", festivals: "Vaisakhi" }
             },
             {
@@ -54,8 +54,15 @@ class App {
                 id: 7, name: "Ajanta Caves", location: { lat: 20.5519, lng: 75.7467 },
                 meta: "2nd Century BCE",
                 desc: "30 rock-cut Buddhist cave monuments featuring the finest surviving examples of ancient Indian art.",
-                image: "https://images.unsplash.com/photo-1626500155553-6147693673c2?w=800",
+                image: "https://imgs.search.brave.com/D4EHZEzG0a-Te66pumL8lGykJy2Ae0w8DvLZsF2fej4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTA0/MjI4NzU5NC9waG90/by90aGUtd29uZGVy/LW9mLWFqYW50YS1j/YXZlcy10aGUtcm9j/ay1jdXQtYnVkZGhp/c3QtbW9udW1lbnRz/LmpwZz9zPTYxMng2/MTImdz0wJms9MjAm/Yz1VNzhHQ0JQbnpS/aG9SOUQxblhiaS1l/Z2hqc0U4WGVCSTFY/YTd0a3NiZUNFPQ",
                 details: { timings: "9:00 AM - 5:00 PM", style: "Rock-cut", festivals: "Ajanta Ellora Festival" }
+            },
+            {
+                id: 7, name: "Paradesi Synagogue", location: { lat:9.95722, lng: 76.25944 },
+                meta: "1568 A.D",
+                desc: "The Malabari Jews or Yehudan Mappila (also known as Cochin Jews) formed a prosperous trading community of Kerala, and they controlled a major portion of worldwide spice trade.",
+                image: "https://imgs.search.brave.com/xgkz4foeFUdezYrxB20-u_Mzt7jg6QuVcDWvtGGjmn0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/a2VyYWxhdG91cmlz/bS5vcmcvaW1hZ2Vz/L2p1ZGFpc20vbGFy/Z2UvbWF0dGFuY2hl/cnlfbGFyZ2UuanBn",
+                details: { timings: "9:00 AM - 5:00 PM", style: "-", festivals: "-" }
             }
         ];
         this.init();
