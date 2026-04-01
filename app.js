@@ -58,7 +58,7 @@ class App {
                 details: { timings: "9:00 AM - 5:00 PM", style: "Rock-cut", festivals: "Ajanta Ellora Festival" }
             },
             {
-                id: 7, name: "Paradesi Synagogue", location: { lat:9.95722, lng: 76.25944 },
+                id: 8, name: "Paradesi Synagogue", location: { lat:9.95722, lng: 76.25944 },
                 meta: "1568 A.D",
                 desc: "The Malabari Jews or Yehudan Mappila (also known as Cochin Jews) formed a prosperous trading community of Kerala, and they controlled a major portion of worldwide spice trade.",
                 image: "https://imgs.search.brave.com/xgkz4foeFUdezYrxB20-u_Mzt7jg6QuVcDWvtGGjmn0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/a2VyYWxhdG91cmlz/bS5vcmcvaW1hZ2Vz/L2p1ZGFpc20vbGFy/Z2UvbWF0dGFuY2hl/cnlfbGFyZ2UuanBn",
